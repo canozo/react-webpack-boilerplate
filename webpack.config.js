@@ -8,8 +8,9 @@ module.exports = {
   },
   entry: './src/index.jsx',
   output: {
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js',
     path: `${__dirname}/public`,
-    filename: 'bundle.js'
   },
   module: {
     rules: [
